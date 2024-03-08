@@ -1,14 +1,11 @@
 package com.tgid.teste.junior.controller;
 
 import com.tgid.teste.junior.dto.company.CompanyaInputDTO;
-import com.tgid.teste.junior.dto.company.EmpresaRespostaDTO;
-import com.tgid.teste.junior.dto.company.TransactionDTO;
 import com.tgid.teste.junior.exception.ResourceNotFoundException;
 import com.tgid.teste.junior.model.Company;
 import com.tgid.teste.junior.service.CompanyService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

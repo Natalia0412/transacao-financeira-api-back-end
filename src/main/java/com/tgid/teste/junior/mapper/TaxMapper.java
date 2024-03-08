@@ -10,6 +10,6 @@ import org.mapstruct.factory.Mappers;
 public interface TaxMapper {
     TaxMapper INSTANCE = Mappers.getMapper(TaxMapper.class);
 
-    Tax TaxInsertDTOToTax(TaxInputDTO dto0);
+    Tax TaxInsertDTOToTax(TaxInputDTO dto);
 
 }
