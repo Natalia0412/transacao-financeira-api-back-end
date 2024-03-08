@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 public interface CompanyMapper {
     CompanyMapper INSTANCE = Mappers.getMapper(CompanyMapper.class);
-    @Mapping(target = "clients", source = "clients", qualifiedByName = "mapClientIds")
+    @Mapping(target = "clientList", source = "clientList", qualifiedByName = "mapClientIds")
     Company CompanyInsertDTOTOCompany(CompanyaInputDTO dto);
     @Named("mapClientIds")
     default List<Client> map(List<Long> clientId) {

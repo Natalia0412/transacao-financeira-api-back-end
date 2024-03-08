@@ -33,7 +33,11 @@ public class Company {
             inverseJoinColumns = @JoinColumn(name = "CLIENT_ID")
     )
     private List<Client> clientList;
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "empresa", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
     @JoinColumn(name = "COMPANY_ID")
+
     private List<Tax> taxaList;
 }

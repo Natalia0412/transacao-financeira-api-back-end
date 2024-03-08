@@ -1,13 +1,11 @@
 package com.tgid.teste.junior.controller;
 
 import com.tgid.teste.junior.dto.taxa.TaxInputDTO;
-import com.tgid.teste.junior.dto.taxa.TaxaRespostaDTO;
 import com.tgid.teste.junior.exception.ResourceNotFoundException;
 import com.tgid.teste.junior.model.Tax;
 import com.tgid.teste.junior.service.TaxaService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
